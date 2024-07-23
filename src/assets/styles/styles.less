@@ -1,0 +1,42 @@
+
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr)
+}
+.contenedorFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+@width:100%;
+@colorfondo:#b5b4b4bc;
+@fondo:"../img/fondo2.jpg";
+
+div{
+    .contenedorFlex();
+    width: @width;
+    height: 100vh;
+    background-color: @colorfondo;
+    ul{
+        .contenedorGrid();
+        gap: 15px;
+        width:@width;
+        max-width: 800px;
+        padding: 10px;
+        list-style: none;
+
+       li{
+           .contenedorFlex();
+           color: black;
+           background-image: url(@fondo);
+           background-position: center;
+           background-size: cover;
+           height: 150px;
+           border-radius: 10px;
+           box-shadow: 1px1px8px rgb(0, 0, 0,0.4);
+       } 
+       li:hover{
+        scale: 1.1;
+       }
+    }
+}
