@@ -5,7 +5,8 @@ import img from './assets/img/js/img'
 
 
 function App() {
-  const cartas=[1,2,3,4,5,6,7,8,9,10,11,12]
+  const cartas=[img[0],img[1],img[2],img[3],img[4],img[5],img[6],img[7],img[8],img[9],img[10],img[11]]
+  
 
 
   
@@ -24,9 +25,9 @@ function App() {
                   
               </div>
               <div className='back'>
-                {img.map((url,index)=>(
-                    <img src={url} alt="" srcset="" />
-                ))}
+                <img src={num} alt="" />
+               
+                
                   
               </div>
             </li>
